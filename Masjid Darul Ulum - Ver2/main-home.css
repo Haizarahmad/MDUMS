@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.container-details{
+    position: absolute;
+    top: 6rem;
+    width: 40rem;
+    z-index: 1;
+}
+
+h1{
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+
+p{
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+.announcement-container h1{
+    font-size: 25px;
+}
+
+.title-spacing{
+    letter-spacing: 0.2rem;
+}
+
+.img-container{
+    margin-top: 15rem;
+    opacity: 0.5;
+    display: flex;
+}
+
+.announcement-container{
+    width: 100%;
+}
+
+.announcement-img{
+    width: 100%;
+    object-fit: cover;
+    max-height: 15rem;
+}
+
+.muted-color{
+    color: #B4B4B4;
+}
+
+.ahli-kariah-section{
+    background-color: #E5FAF1;
+}
+
+.ahli-kariah-img{
+    width: 100%;
+    opacity: 0.5;
+}
+
+.sedekah-img{
+    width: 45rem;
+    height: 100%;
+}
+
+.qr-img{
+    height: 20rem;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+.contact-nav{
+    background-color: #E5FAF1;
+    height: 20rem;
+}

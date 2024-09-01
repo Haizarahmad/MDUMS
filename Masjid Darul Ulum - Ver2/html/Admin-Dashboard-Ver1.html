@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="Admin-Dashboard-Style.css" media="screen">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="nav-bar">
+        <header>
+          <img class="logo-icon"src="images/MDUMS.png">
+            <div class="list-bar">
+                <img class="nav-icon" src="images/myspace.png">
+                <img class="nav-icon" src="images/file.png">
+                <img class="nav-icon" src="images/notification.png">
+                <img class="nav-icon" src="images/logout.png">
+                <a href ="#" class="button-bar">Ahli Kariah</a>
+                <a href ="#" class="button-bar">Berita</a>
+                <a href ="#" class="button-bar">Notifikasi</a>
+                <a href ="#" class="button-bar">Log Keluar</a>
+            </div>
+        </header>
+
+        
+    <div class="header-bar">
+        <div class="list-top-header">
+            <span class="circle">1</span>
+            <a href ="#" class="box-top"><img class= "top-nav-icon" src="images/envelope.png"></a>
+            <a href ="#" class="box-top"><img class= "top-nav-icon" src="images/settings.png"></a>
+        </div>
+    </div>
+
+    </nav>
+
+    <div class="container-1">
+        <div class="box-1">
+            <h1>Transaksi</h1>
+            <div class="chart-js">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+
+        <div class="box-1">
+            <h1>Bilangan Pemohon</h1>
+            <div class="chart-js-pemohon">
+                <canvas id="myChart-2"></canvas>
+            </div>
+        </div>
+
+        <div class="box-1">
+            <h1>Ahli Kariah</h1>
+            <div class="chart-js-ahli-kariah">
+                <canvas id="myChart-3"></canvas>
+            </div>
+        </div>
+
+        <div class="box-1">
+          <h1>Berita</h1>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Title</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+              </tr>
+            </tbody>
+          </table>
+
+      </div>
+
+      <div class="box-1">
+        <h1>Notifikasi</h1>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Title</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+              
+    <script>
+      const ctx = document.getElementById('myChart');
+
+      new Chart(ctx, {
+        type: 'pie',
+        data: {
+          labels: ['Green', 'Purple'],
+          datasets: [{
+            label: '# of Votes',
+            data: [5, 2],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+
+      const ctx2 = document.getElementById('myChart-2');
+
+      new Chart(ctx2, {
+        type: 'line',
+        data: {
+          labels: ['Green', 'Purple', 'Orange'],
+          datasets: [{
+            label: '# of Votes',
+            data: [5, 2, 3],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+
+      const ctx3 = document.getElementById('myChart-3');
+
+      new Chart(ctx3, {
+        type: 'bar',
+        data: {
+          labels: ['Green', 'Purple', 'Orange'],
+          datasets: [{
+            label: '# of Votes',
+            data: [5, 2, 3],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    </script>
+
+</body>
+<footer>
+</footer>
+</html>
